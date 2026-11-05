@@ -1,0 +1,520 @@
+/* ===== RESET DAN PENGATURAN DASAR ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fbf8f3;
+    color: #1f1f4d;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Pembungkus isi supaya rapi di tengah */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e6e1d8;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-radius: 30px 30px 30px 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.nav-isi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #3a3a98;
+}
+
+.nav-logo img {
+    width: 55px;
+    height: 55px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.nav-menu a {
+    color: #5e5e7e;
+}
+
+.nav-menu a:hover {
+    color: #3a3a98;
+}
+
+/* ===== HERO / BERANDA ===== */
+.hero {
+    padding: 50px 0 70px;
+}
+
+.hero-isi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.hero-teks {
+    flex: 1.4;
+}
+
+.hero-gambar {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-gambar img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.status {
+    display: inline-block;
+    background-color: #ffffff;
+    border: 1px solid #e6e1d8;
+    border-radius: 30px;
+    padding: 4px 16px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin: 20px 0 15px;
+    color: #3a3a98;
+}
+
+.hero-deskripsi {
+    color: #5e5e7e;
+    margin-bottom: 25px;
+}
+
+.tombol {
+    display: inline-block;
+    background-color: #3a3a98;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.tombol:hover {
+    background-color: #2c2c78;
+}
+
+.tombol-garis {
+    background-color: transparent;
+    color: #3a3a98;
+    border: 2px solid #3a3a98;
+}
+
+.tombol-garis:hover {
+    background-color: #3a3a98;
+    color: #ffffff;
+}
+
+.kontak-cafetaria {
+    margin-top: 25px;
+}
+
+.kontak-cafetaria p {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #4A4A4A; /* Warna teks abu-abu gelap agar senada */
+}
+
+
+/* ===== BAGIAN UMUM ===== */
+.bagian {
+    padding: 60px 0;
+}
+
+.bagian-putih {
+    background-color: #ffffff;
+}
+
+.bagian h2 {
+    font-size: 32px;
+    color: #3a3a98;
+    margin-bottom: 8px;
+}
+
+.subjudul {
+    color: #5e5e7e;
+    margin-bottom: 25px;
+}
+
+.paragraf {
+    max-width: 700px;
+    margin-bottom: 15px;
+}
+.btn-wa {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #25d366;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  margin-top: 15px;
+}
+
+.btn-wa:hover {
+  background-color: #1ebd56;
+  transform: translateY(-2px);
+}
+
+.icon-wa {
+  width: 20px;
+  height: 20px;
+}
+/* ===== KARTU (dipakai di banyak bagian) ===== */
+.kotak-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 25px;
+}
+
+.kartu {
+    background-color: #ffffff;
+    border: 1px solid #e6e1d8;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.bagian-putih .kartu {
+    background-color: #fbf8f3;
+}
+
+.kartu h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.kartu p {
+    font-size: 15px;
+    color: #5e5e7e;
+}
+
+.tahun {
+    font-size: 32px !important;
+    color: #3a3a98;
+}
+
+/* ===== MENU ===== */
+.tab-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tab {
+    background-color: #ffffff;
+    border: 2px solid #e6e1d8;
+    border-radius: 30px;
+    padding: 6px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.tab.aktif {
+    background-color: #3a3a98;
+    border-color: #3a3a98;
+    color: #ffffff;
+}
+
+.nama-menu {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.harga {
+    font-weight: 700;
+    color: #3a3a98;
+}
+
+/* ===== GALERI ===== */
+.galeri {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.foto {
+    background-color: #ffffff;
+    border: 1px solid #e6e1d8;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.foto img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.foto-kosong {
+    height: 260px;
+    background-color: #efeae0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5e5e7e;
+    font-size: 14px;
+}
+
+.foto p {
+    padding: 10px 14px;
+    font-size: 14px;
+    color: #5e5e7e;
+}
+
+/* ===== STRUKTUR ORGANISASI ===== */
+.struktur {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.baris {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Garis Vertikal Utama */
+.garis-vertikal {
+    width: 2px;
+    height: 30px;
+    background-color: #c9c4b8;
+}
+
+/* Kotak Jabatan Standar */
+.jabatan {
+    background-color: #fbf8f3;
+    border: 1px solid #e6e1d8;
+    border-radius: 12px;
+    padding: 14px 20px;
+    text-align: center;
+    font-weight: 600;
+    color: #2b2b2b;
+    box-sizing: border-box;
+}
+
+.jabatan small {
+    font-weight: 400;
+    color: #7a7a9a;
+    margin-top: 4px;
+    display: block;
+}
+
+/* Lebar & Warna Kotak Utama */
+.jabatan.utama {
+    background-color: #3b3b98;
+    border-color: #3b3b98;
+    color: #ffffff;
+    width: 240px;
+}
+
+.jabatan.utama small {
+    color: #e0e0ff;
+}
+
+.font-sekretaris {
+    width: 200px;
+}
+
+.font-bendahara {
+    width: 320px; 
+}
+
+.font-bismen {
+    width: 280px;
+}
+
+.teks-bismen {
+    color: #1a202c;
+    font-weight: 700;
+}
+
+/* ==================================================
+   CSS PERCABANGAN PRESISI (TANPA GARIS BERLEBIHAN)
+   ================================================== */
+
+.area-cabang {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 580px;
+}
+
+.baris-cabang {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.kolom-cabang {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.garis-sambung-kotak {
+    width: 2px;
+    height: 30px;
+    background-color: #c9c4b8;
+}
+
+/* Membuat garis horizontal hanya membentang pas di tengah-tengah antar kolom */
+.garis-h {
+    position: absolute;
+    height: 2px;
+    background-color: #c9c4b8;
+    width: calc(100% - 290px); /* Mengatur panjang agar berhenti tepat di tengah kotak atas/bawah */
+    left: 130px;
+}
+
+.garis-atas {
+    top: 0;
+}
+
+.garis-bawah {
+    bottom: 0;
+}
+/* ===== PENITIPAN BARANG ===== */
+.nomor {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    background-color: #f6c945;
+    color: #3a2f00;
+    font-weight: 700;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.catatan {
+    display: inline-block;
+    background-color: #f6c945;
+    color: #3a2f00;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background-color: #3a3a98;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 14px;
+}
+
+/* ===== RESPONSIF TABLET ===== */
+@media (max-width: 800px) {
+    .kotak-grid,
+    .galeri {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+}
+
+/* ===== RESPONSIF HP ===== */
+@media (max-width: 600px) {
+    .nav-isi {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero-isi {
+        flex-direction: column-reverse;
+    }
+
+    .hero-gambar img {
+        max-width: 200px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .tombol-garis {
+        margin-top: 10px;
+    }
+
+    .jam-istirahat {
+        flex-wrap: wrap;
+    }
+
+    .kotak-grid,
+    .galeri {
+        grid-template-columns: 1fr;
+    }
+}
